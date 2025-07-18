@@ -1,0 +1,17 @@
+import { useState } from "react";
+
+function App(){
+  const [texto, setTexto]= useState("ola dog")
+
+  return(
+    <div>
+      <h1>{texto}</h1>
+      <button onClick={() => {
+        setTexto("Tchau dog")  
+      }}
+      >mudar mensagem</button>
+    </div>
+  );
+}
+
+export default App;
